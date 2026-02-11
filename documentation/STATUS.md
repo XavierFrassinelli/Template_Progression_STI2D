@@ -1,6 +1,6 @@
 # Status — Progression STI2D Template
 
-**Derniere mise a jour :** 11 fevrier 2026 13:15 UTC
+**Derniere mise a jour :** 11 fevrier 2026 13:45 UTC
 
 ## Etat du projet
 
@@ -8,8 +8,8 @@
 - ✅ Phase B TERMINEE (fusion du repo public 2025)
 - ✅ Phase B.2 TERMINEE (assets vérifiés, HTML fixes, 44 pages générées)
 - ✅ GitHub Pages LIVE et SYNCHRONISÉE (https://xaviersfelli.github.io/Template_Progression_STI2D/)
-- ✅ Build OK via `npm run build` (44 pages HTML)
-- ✅ gh-pages rebuild complet (commit 957c54f — 11 fév 13:15)
+- ✅ HTML rendering FIXÉ (HTML unescaped via clean-html-indentation.js)
+- ✅ Build OK via `npm run build` (44 pages HTML avec HTML rendu correctement)
 
 ## Ce qui est fait
 
@@ -25,10 +25,12 @@
 ### Migration contenu complet (11 fév 2026)
 - ✅ 6 fichiers Première migré : bras, maison, robobrole, competences-projet, mind-map, comp-statut.html
 - ✅ Script `migrate-missing-content.js` créé pour automatiser
-- ✅ Script `fix-html-rendering.js` créé pour corriger indentation HTML
+- ✅ Script `fix-html-rendering.js` créé pour corriger indentation HTML (première version)
+- ✅ Script `clean-html-indentation.js` créé pour dés-indenter complètement le HTML (fix final)
 - ✅ Conversion Material Tabs (===) → Headers (##)
 - ✅ Correction chemins assets `/Progression-STI2D-2025/` → `/assets/imports/2025/`
 - ✅ 44 pages HTML générées (38 → 44 pages)
+- ✅ HTML rendering fix : markdown-it n'échappe plus le HTML (via dés-indentation)
 
 ### Structure et base
 - Dossier template cree : `Progression_STI2D_Template/`
