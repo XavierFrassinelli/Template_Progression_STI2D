@@ -1,0 +1,270 @@
+# ======================================
+# Configuration Progression STI2D
+# ======================================
+# Toutes les variables spécifiques à votre établissement et progression
+# Les valeurs ci-dessous sont injectées automatiquement dans les templates
+
+# ======================================
+# Méta-données
+# ======================================
+
+annee_scolaire: "2026-27"
+etablissement: "Lycée Victor Hugo"
+ville: "Paris"
+academie: "Paris"
+
+# ======================================
+# Enseignant
+# ======================================
+
+enseignant:
+  nom: "Xavier"
+  titre: "M."  # M. / Mme / Dr.
+  email: "xavier@lycee-victor-hugo.fr"
+  site_web: "https://progression-sti2d.lycee-victor-hugo.fr"
+
+# ======================================
+# Classes
+# ======================================
+
+classes:
+  - nom: "1STI2D-1"
+    niveau: "Première"
+    effectif: 24
+    specialites: 
+      - "2I2D"  # Innovation et Ingénierie du Développement Durable
+      - "IT"    # Innovation Technologique
+    salle: "B204"
+    horaire: "Lundi 8h-12h, Jeudi 14h-18h"
+  
+  - nom: "1STI2D-2"
+    niveau: "Première"
+    effectif: 22
+    specialites:
+      - "EE"    # Énergie et Environnement
+      - "AC"    # Architecture et Construction
+    salle: "B205"
+    horaire: "Mardi 8h-12h, Vendredi 14h-18h"
+  
+  - nom: "TSTI2D-1"
+    niveau: "Terminale"
+    effectif: 18
+    specialites:
+      - "2I2D"
+    salle: "B206"
+    horaire: "Mercredi 8h-12h"
+
+# ======================================
+# Branding (Identité visuelle)
+# ======================================
+
+branding:
+  logo_etablissement: "assets/logos/logo-victor-hugo.png"
+  logo_sti2d: "assets/logos/logo-sti2d.svg"
+  favicon: "assets/logos/favicon.ico"
+  
+  # Palette de couleurs (format HEX)
+  couleurs:
+    primaire: "#0066CC"       # Bleu principal
+    secondaire: "#FF6600"     # Orange accent
+    success: "#28A745"        # Vert validation
+    warning: "#FFC107"        # Jaune avertissement
+    danger: "#DC3545"         # Rouge erreur
+    dark: "#2C3E50"           # Sombre (texte)
+    light: "#ECF0F1"          # Clair (fond)
+  
+  # Polices
+  fonts:
+    principale: "Roboto, sans-serif"
+    titres: "Montserrat, sans-serif"
+    code: "Fira Code, monospace"
+
+# ======================================
+# Objectifs & Compétences Actifs
+# ======================================
+
+# Liste des objectifs traités cette année
+objectifs_actifs:
+  - O1  # Caractériser
+  - O2  # Identifier
+  - O3  # Analyser
+  - O4  # Communiquer
+  - O5  # Expérimenter
+  - O6  # Concevoir
+  - O7  # Respecter contraintes
+
+# Compétences détaillées (référence config/competences.json)
+competences_prioritaires:
+  - CO1.1
+  - CO1.2
+  - CO3.1
+  - CO3.2
+  - CO5.1
+  - CO5.2
+  - CO6.1
+
+# ======================================
+# Applications Interactives
+# ======================================
+
+applications:
+  
+  # Jauge de compétences
+  jauge:
+    enabled: true
+    supabase_url: "https://xxxxx.supabase.co"  # À configurer
+    # ATTENTION: Ne jamais commiter la clé API dans Git !
+    # Utiliser config/supabase-config.js (gitignored)
+    mode_offline: true  # LocalStorage fallback
+    couleurs:
+      niveau_1: "#DC3545"  # Rouge (vu 1 fois)
+      niveau_2: "#FFC107"  # Orange (vu 2 fois)
+      niveau_3: "#28A745"  # Vert (maîtrisé)
+  
+  # Quiz interactifs
+  quiz:
+    enabled: true
+    time_limit: 1800  # Secondes (30min)
+    show_corrections: true
+    retry_allowed: true
+    max_attempts: 3
+  
+  # Futures applications
+  forum:
+    enabled: false
+  
+  chat:
+    enabled: false
+
+# ======================================
+# Options de Build
+# ======================================
+
+build:
+  
+  # Génération HTML
+  output_dir: "docs"
+  clean_before_build: true
+  
+  # Markdown-it plugins
+  markdown:
+    breaks: true          # <br> pour retours ligne
+    linkify: true         # Auto-lier URLs
+    typographer: true     # Belles quotes, tirets
+    highlight: true       # Coloration syntaxe code
+  
+  # Table des matières auto
+  toc:
+    enabled: true
+    depth: 3              # h1, h2, h3
+    container_class: "toc"
+  
+  # Optimisation images
+  images:
+    optimize: true
+    max_width: 1200
+    quality: 85
+    formats: ["webp", "jpg"]  # Générer WebP + fallback
+  
+  # Minification
+  minify:
+    html: false           # true en production
+    css: false
+    js: false
+
+# ======================================
+# Options de Déploiement
+# ======================================
+
+deployment:
+  
+  # GitHub Pages
+  github_pages:
+    enabled: true
+    branch: "gh-pages"
+    cname: ""  # Domaine custom (optionnel)
+  
+  # Analytics (RGPD-friendly)
+  analytics:
+    type: "plausible"  # plausible | none
+    domain: "progression-sti2d.lycee-victor-hugo.fr"
+  
+  # SEO
+  seo:
+    site_name: "Progression STI2D — Lycée Victor Hugo"
+    description: "Ressources pédagogiques complémentaires pour le programme SII (Sciences de l'Ingénieur Industriel) en STI2D"
+    keywords: 
+      - "STI2D"
+      - "SII"
+      - "Ingénierie"
+      - "2I2D"
+      - "IT"
+      - "Lycée"
+    author: "M. Xavier"
+    language: "fr-FR"
+    robots: "index, follow"
+
+# ======================================
+# Options Pédagogiques
+# ======================================
+
+pedagogie:
+  
+  # Affichage progressif
+  reveal_mode: false  # Masquer contenus futurs ?
+  
+  # Dates importantes
+  dates:
+    rentree: "2026-09-01"
+    vacances_toussaint: ["2026-10-22", "2026-11-07"]
+    vacances_noel: ["2026-12-18", "2027-01-03"]
+    vacances_hiver: ["2027-02-12", "2027-02-28"]
+    vacances_printemps: ["2027-04-16", "2027-05-02"]
+    fin_annee: "2027-07-06"
+  
+  # Notation
+  notation:
+    systeme: "competences"  # competences | notes | mixte
+    echelle: [1, 2, 3, 4]  # Non acquis → Expert
+    labels:
+      1: "Non acquis"
+      2: "En cours d'acquisition"
+      3: "Acquis"
+      4: "Expert"
+  
+  # Projets
+  projets:
+    - nom: "Projet Banc d'Essais"
+      classes: ["1STI2D-1", "1STI2D-2"]
+      objectifs: ["O5", "O6", "O7"]
+      duree_semaines: 12
+      date_debut: "2027-01-15"
+      date_rendu: "2027-04-10"
+
+# ======================================
+# Liens Utiles
+# ======================================
+
+liens:
+  pronote: "https://pronote.lycee-victor-hugo.fr"
+  ent: "https://ent.iledefrance.fr"
+  eduscol: "https://eduscol.education.fr/sti/sti2d"
+  github_repo: "https://github.com/xavier/progression-sti2d"
+
+# ======================================
+# Mentions Légales
+# ======================================
+
+legal:
+  licence: "CC-BY-NC-SA 4.0"  # Creative Commons
+  copyright: "© 2026 Lycée Victor Hugo - Académie de Paris"
+  confidentialite: "Les données élèves sont anonymisées et stockées de manière sécurisée conformément au RGPD."
+  contact_rgpd: "dpo@lycee-victor-hugo.fr"
+
+# ======================================
+# Version & Maintenance
+# ======================================
+
+version: "1.0.0"
+derniere_maj: "2026-02-11"
+auteur_template: "GitHub Copilot + Xavier"

@@ -1,0 +1,51 @@
+---
+title: "Titre du TP  2i2d"
+discipline: "2i2d"
+competence: "CO2.1"
+author: "Prof. Xavier"
+date: today
+format:
+  pdf:
+    include-in-header: latex-header.tex
+    latex-engine: xelatex
+    papersize: a4
+---
+
+```{=latex}
+% Définitions attendues par le header
+\newcommand{\DocTitle}{Titre du TP  2i2d}
+\newcommand{\DocCompetence}{CO2.1}
+```
+
+# Contexte et motivation
+
+Décris le contexte du travail et les objectifs pédagogiques de ce module 2i2d (Innovation, Ingénierie et Développement Durable).
+
+# Travail pratique
+
+## Partie 1 : Analyse
+
+- Étape 1 : observer et analyser
+- Étape 2 : identifier les contraintes
+- Étape 3 : formuler les questions
+
+## Partie 2 : Conception
+
+Intègre des équations si pertinent :
+
+$$\text{Efficacité} = \frac{\text{Puissance utile}}{\text{Puissance consommée}} \times 100\%$$
+
+## Partie 3 : Implémentation et validation
+
+Documente les résultats et les enseignements.
+
+# Critères de réussite
+
+- [ ] Comprendre le cahier des charges
+- [ ] Mettre en œuvre la solution proposée
+- [ ] Valider et justifier les résultats
+- [ ] Communiquer les apprentissages
+
+---
+
+_Template 2i2d  Innovation, Ingénierie et Développement Durable._

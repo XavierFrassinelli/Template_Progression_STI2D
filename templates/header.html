@@ -1,0 +1,45 @@
+<header>
+  <div class="container">
+    <div class="header-top">
+      <div class="header-logos">
+        <img src="assets/logos/2i2d.png" alt="2I2D logo" title="2I2D - Ingénierie, Innovation & Développement Durable" class="logo logo-1" data-path="assets/logos/2i2d.png">
+        <img src="assets/logos/i2d.png" alt="I2D logo" title="Ingénierie & Développement Durable" class="logo logo-2" data-path="assets/logos/i2d.png">
+        <img src="assets/logos/it.png" alt="Innovation Technologique logo" title="Innovation Technologique" class="logo logo-3" data-path="assets/logos/it.png">
+        <img src="assets/logos/logoVH.png" alt="Lycée Victor Hugo" title="Lycée Victor Hugo" class="logo logo-4" data-path="assets/logos/logoVH.png">
+      </div>
+      <div class="header-title">
+        <h1>Programme SII — STI2D (BO)</h1>
+      </div>
+      <div class="header-actions">
+        <button id="themeToggle" class="theme-toggle" aria-label="Basculer thème">🌙</button>
+      </div>
+    </div>
+    <nav>
+      <a href="index.html" data-path="index.html" style="color:#fff;">📚 Accueil</a>
+      <a href="objectifs/O1.html" data-path="objectifs/O1.html" style="color:#fff;">O1 - Caractériser</a>
+      <a href="activites/TP_O1.html" data-path="activites/TP_O1.html" style="color:#fff;">🔬 TP & Activités</a>
+      <a href="ressources/bienvenue/accueil.html" data-path="ressources/bienvenue/accueil.html" style="color:#fff;">👋 Bienvenue</a>
+      <a href="activites/premiere/programme-premiere.html" data-path="activites/premiere/programme-premiere.html" style="color:#fff;">🎓 Première</a>
+      <a href="ressources/chaine_info/index.html" data-path="ressources/chaine_info/index.html" style="color:#fff;">🔗 Chaîne info</a>
+      <a href="fiches-eleves/Fiche_Analyse_Produit.html" data-path="fiches-eleves/Fiche_Analyse_Produit.html" style="color:#fff;">📋 Fiches Élèves</a>
+      <a href="ressources/Ressources_Videos.html" data-path="ressources/Ressources_Videos.html" style="color:#fff;">🎥 Ressources</a>
+      <a href="ressources/Quiz_O1_O7.html" data-path="ressources/Quiz_O1_O7.html" style="color:#fff;">📝 Quiz</a>
+    </nav>
+  </div>
+</header>
+<style>
+  /* Light theme overrides when body has .theme-light */
+  body.theme-light {
+    --primary: #002855;
+    --secondary: #1a5490;
+    --accent: #ff6b35;
+    --light: #f5f7fa;
+    --text: #1f2937;
+    --border: #e5e7eb;
+  }
+  .header-actions { display:flex; align-items:center; gap:0.5rem; }
+  .theme-toggle { background: transparent; border: 1px solid rgba(255,255,255,0.12); color: var(--text); width:42px; height:42px; border-radius:8px; cursor:pointer; font-size:1.1rem; display:inline-flex; align-items:center; justify-content:center; transition: background .15s, transform .12s; }
+  .theme-toggle:hover { transform: translateY(-2px); background: rgba(255,255,255,0.04); }
+</style>
+
+<!-- Theme toggle logic lives in templates/layout.html to avoid duplication -->

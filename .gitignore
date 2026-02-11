@@ -1,0 +1,180 @@
+# =========================
+# Fichiers Sensibles (RGPD)
+# =========================
+
+# Ressources pédagogiques privées
+pedagogie/plans-seance/**
+pedagogie/evaluations/**
+pedagogie/coriges/**
+pedagogie/ressources-prof/**
+!pedagogie/templates-quarto/
+
+# Keep dossiers vides dans Git
+!pedagogie/**/.gitkeep
+
+# =========================
+# Configuration & Secrets
+# =========================
+
+# Configuration Supabase (secrets)
+config/supabase-config.js
+apps/**/supabase-config.js
+
+# Firebase export secrets
+audit/firebase-secrets.json
+
+# Variables d'environnement
+.env
+.env.local
+.env.production
+.env.development
+
+# Clés API, certificats
+*.key
+*.pem
+secrets/
+
+# =========================
+# Node / NPM
+# =========================
+
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+.pnpm-debug.log*
+
+# =========================
+# Build / Output
+# =========================
+
+# Output build (optionnel, peut être commité pour GH Pages)
+# Décommenter si déploiement via GitHub Actions
+# docs/
+
+# Fichiers temporaires build
+.cache/
+dist/
+tmp/
+temp/
+
+# =========================
+# Quarto
+# =========================
+
+/.quarto/
+_freeze/
+_site/
+*.qmd.html
+*.qmd.pdf
+
+# LaTeX temporaires
+*.aux
+*.log
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# =========================
+# Éditeurs / IDEs
+# =========================
+
+# VSCode
+.vscode/
+!.vscode/extensions.json
+!.vscode/settings.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+
+# Emacs
+*~
+\#*\#
+.\#*
+
+# =========================
+# Système d'exploitation
+# =========================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+.directory
+.Trash-*
+
+# =========================
+# Médias / Assets
+# =========================
+
+# Fichiers volumineux (utiliser Git LFS si nécessaire)
+*.mp4
+*.avi
+*.mov
+*.mkv
+# Décommenter si vidéos hébergées ailleurs
+
+# Fichiers temporaires images
+*.psd
+*.ai
+*.sketch
+*.fig
+
+# =========================
+# Divers
+# =========================
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+
+# Logs
+logs/
+*.log
+
+# Backup
+*.bak
+*.backup
+backup/
+old/
+
+# =========================
+# Staging Imports
+# =========================
+
+_imports/
+
+# =========================
+# Audit (peut être supprimé après Phase A)
+# =========================
+
+# Décommenter après migration terminée
+# audit/

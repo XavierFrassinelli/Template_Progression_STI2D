@@ -1,0 +1,12 @@
+# Configuration Quarto pour templates de documents individuels
+
+format:
+  pdf:
+    documentclass: article
+    latex-engine: xelatex
+    papersize: a4
+    include-in-header: latex-header.tex
+
+# Paramètres globaux pour les templates Quarto
+execute:
+  enabled: false

@@ -1,0 +1,62 @@
+---
+title: "TP Tachymètre"
+discipline: "I2D"
+competence: "CO2.1"
+author: "Prof. Xavier"
+date: today
+format:
+  pdf:
+    include-in-header: latex-header.tex
+    latex-engine: xelatex
+    papersize: a4
+  docx: default
+---
+
+```{=latex}
+% Définitions attendues par le header
+\newcommand{\DocTitle}{Travaux pratiques I2D}
+\newcommand{\DocCompetence}{CO2.1}
+```
+
+# Objectifs
+
+- Objectif 1
+- Objectif 2
+- Objectif 3
+
+# \underline{Compétences mobilisées}
+
+- Analyser un système
+- Modéliser un comportement
+- Implanter une solution
+
+# Éléments de cours
+
+## Notion 1 :
+
+Description de la notion. Équations :
+
+$$\iiint_V \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right) dV = \int_0^{2\pi} \int_0^1 \int_0^2 r^2 \cos(2\theta) \, dz \, dr \, d\theta$$
+
+## Notion 2
+
+Autre concept important.
+
+# Travail à réaliser
+
+1. **Analyse du problème** : lire le cahier des charges
+2. **Implémentation** : développer la solution
+3. **Tests** : valider le fonctionnement
+4. **Communication** : documenter les résultats
+
+# Résultats attendus
+
+| Critère | Détails | Validation |
+|---------|---------|------------|
+| Analyse | Bien identifier les contraintes |  |
+| Implémentation | Code fonctionnel et documenté |  |
+| Tests | Résultats probants |  |
+
+---
+
+_Template I2D  Ingénierie et Innovation pour le Développement._

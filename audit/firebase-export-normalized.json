@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "source": "firebase-export.json",
+    "generated_at": "2026-02-11T10:42:03.846Z",
+    "total_users": 2,
+    "total_progress": 3
+  },
+  "users": [
+    {
+      "user_id": "ab3CTDHlYTVUslyAYwC48iRHi3g1"
+    },
+    {
+      "user_id": "i2my3Ji6S2PDS4PFMTvN4H0dapl1"
+    }
+  ],
+  "competence_progress": [
+    {
+      "user_id": "i2my3Ji6S2PDS4PFMTvN4H0dapl1",
+      "competence_id": "CO1.1",
+      "check_count": 1
+    },
+    {
+      "user_id": "i2my3Ji6S2PDS4PFMTvN4H0dapl1",
+      "competence_id": "CO1.2",
+      "check_count": 1
+    },
+    {
+      "user_id": "i2my3Ji6S2PDS4PFMTvN4H0dapl1",
+      "competence_id": "CO1.3",
+      "check_count": 1
+    }
+  ]
+}

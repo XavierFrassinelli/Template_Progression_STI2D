@@ -1,0 +1,71 @@
+---
+title: "TP Technologie  IT"
+discipline: "IT"
+competence: "CO2.1"
+author: "Prof. Xavier"
+date: today
+format:
+  pdf:
+    include-in-header: latex-header.tex
+    latex-engine: xelatex
+    papersize: a4
+---
+
+```{=latex}
+% Définitions attendues par le header
+\newcommand{\DocTitle}{TP Technologie  IT}
+\newcommand{\DocCompetence}{CO2.1}
+```
+
+# Introduction
+
+Contextualisez le travail pratique et définissez les enjeux technologiques pour ce module IT (Ingénierie Technologique).
+
+# Savoirs mobilisés
+
+- Savoir 1
+- Savoir 2
+- Savoir 3
+
+# Activités pratiques
+
+## Étape 1 : Préparation
+
+Préparation du poste de travail et mise en place. Vérifier la sécurité et les équipements.
+
+## Étape 2 : Réalisation
+
+Exécution du travail pratique selon le protocole établi.
+
+## Étape 3 : Analyse des résultats
+
+Relever les observations et interpréter les données.
+
+# Observations et données
+
+```
+Résultats à compléter par l'élève :
+- Mesure 1 : ___________
+- Mesure 2 : ___________
+- Observation : ___________
+```
+
+# Conclusion
+
+- Que as-tu appris ?
+- Comment cela s'applique-t-il au monde réel ?
+- Améliorations ou extensions possibles ?
+
+# Barème d'évaluation
+
+| Compétence | Points | Acquis |
+|-----------|--------|--------|
+| Organisation et sécurité | /5 | |
+| Respect du protocole | /10 | |
+| Analyse des résultats | /10 | |
+| Rapport/Communication | /5 | |
+| **Total** | **/30** | |
+
+---
+
+_Template IT  Technologie et Innovation._
