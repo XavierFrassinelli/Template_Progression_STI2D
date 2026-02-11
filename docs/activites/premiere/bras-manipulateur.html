@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apprendre en s'amusant</title>
+  <title>Page</title>
   <style>
     :root {
       --primary: #0b2340;
@@ -491,34 +491,120 @@
 <!-- Theme toggle logic lives in templates/layout.html to avoid duplication -->
 
   <main class="container">
-    <h1>Apprendre en s'amusant</h1>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython_stdlib.min.js"></script>
-<p><strong>Question :</strong> Quelle est la valeur de 3 * 7 ?</p>
-<div style="margin: 20px 0;">
-<input id="reponse_eleve" placeholder="Votre reponse ici" style="padding: 5px;">
-<button id="bouton_valider" style="padding: 5px; cursor: pointer;">Valider</button>
+    <h1>Page secrète</h1>
+<p>Si vous voyez ce texte, c'est que le mot de passe a fonctionné !</p>
+<h2>Bras manipulateur</h2>
+<h2>Conception des produits</h2>
+<pre><code>* Comment concevoir un produit à l'aide du prototypage rapide ?
+
+* **CO 5.8 :** Définir à l’aide d’un modeleur numérique, les formes et dimensions d’une pièce d’un produit
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/bras/cao.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
 </div>
-<div id="resultat" style="font-weight:bold; min-height: 20px;"></div>
-<script type="text/python">
-from browser import document, alert
+<pre><code>* Initiation à la conception assistée par ordinateur
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/Initiation Solid Works_1.pdf" width="100%" height="400px"></iframe>
+<pre><code> &lt;iframe src=&quot;/assets/imports/2025/fichiers/bras/Initiation Solid Works_2.pdf&quot; width=&quot;100%&quot; height=&quot;400px&quot;&gt;&lt;/iframe&gt;
 
-def verifier(ev):
-    reponse = document["reponse_eleve"].value
+ * Exercices CAO
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TP0_2.pdf" width="100%" height="400px"></iframe>
+<iframe src="/assets/imports/2025/fichiers/bras/exos SW+proj_ortho.pdf" width="100%" height="400px"></iframe>
+<h2>Expression orale</h2>
+<pre><code>* Quel est l'impact de l'automatisation dans notre société ?
 
-    if reponse.strip() == "21":
-        document["resultat"].text = "✅ Bravo ! C'est la bonne reponse."
-        document["resultat"].style.color = "green"
-    else:
-        document["resultat"].text = "❌ Faux, c'est incorrect."
-        document["resultat"].style.color = "red"
+* **CO4.2:** Décrire le fonctionnement et/ou l’exploitation d’un produit en utilisant l'outil de description le plus pertinent
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/bras/evolution.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+</div>
+<pre><code>* Histoire de l'automatisation
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/0_1 Présentation et situation déclenchante.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Réalisation d'un diaporama pour présenter un sujet
+</code></pre>
+<h2>Reconception d'un produit</h2>
+<pre><code>* Comment adapter une solution pour répondre au cahier des charges ?
 
-# On attache le clic du bouton a la fonction
-document["bouton_valider"].bind("click", verifier)
-</script>
-<script>
-    brython();
-</script>
+* **CO5.2 :** Identifier et justifier un problème technique à partir de l’analyse globale d’un produit (approche matière – énergie – information)
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/bras/bras_manip.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+</div>
+<pre><code>* Modification d'une pince 
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/bras/pince.png" alt="diagramme stem" style="width: 400px; height: 400px;"/>
+</div>
+<pre><code>* Modification d'une pince pour préparer la re-conception du bras manipulateur
+
+* Le tp est en html
+
+* Document réponse 1
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TP1_document_réponse.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Document réponse 2
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TP2_document_réponse.pdf" width="100%" height="400px"></iframe>
+<h2>Unités fonctionnelles</h2>
+<pre><code>* Comment distinguer plusieurs produits sur les mêmes critères ?
+
+* **CO3.2 :** Identifier et caractériser l’agencement matériel et/ou logiciel d’un produit
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/unité fonctionnelle_élèves.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Rasoir jetable
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/rasoir jetable_élève.pdf" width="100%" height="400px"></iframe>
+<h2>Liaisons mécaniques</h2>
+<pre><code>* Comment analyser les interactions entre deux pièces ?
+
+* **CO4.1 :** Décrire une idée, un principe, une solution, un projet en utilisant des outils de représentation adaptés
+
+* Situation déclenchante
+</code></pre>
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <video width="640" height="360" controls>
+            <source src="/assets/imports/2025/fichiers/bras/Crash_concord.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas l'élément vidéo.
+    </video>
+</div>
+<pre><code>* Introduction liaisons mécaniques
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/Liaisons_mécaniques_introduction_e_v2.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Logiciel pour s'entraîner
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/160-notice-schematrice.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exercices
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TP4 schema cinematique.pdf" width="100%" height="400px"></iframe>
+<h2>Impact environnemental bras</h2>
+<pre><code>* Comment anticiper l'impact environnemental d'un produit ?
+
+* **CO6.5 :** Interpréter les résultats d’une simulation et conclure sur la performance de la solution
+
+* Assemblage du bras manipulateur
+
+* [Notice bras manipulateur](https://www.instructables.com/MeArm-V11-Tiny-Open-Source-Robot-Arm/)
+
+
+* Diagramme SysML
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/1_0 Diagramme SysMl.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Nomenclature
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/nomenclature.pdf" width="100%" height="400px"></iframe>
+<pre><code>* TP Sustainability en html
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/bras/sustainability.png" alt="diagramme stem" style="width: 600px; height: 400px;"/>
+</div>
+<pre><code>* Document réponse
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TP7document reponse.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Programmation du bras manipulateur
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/bras/TD_Bras_robot.pdf" width="100%" height="400px"></iframe>
 
   </main>
   <footer>

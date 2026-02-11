@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apprendre en s'amusant</title>
+  <title>Page</title>
   <style>
     :root {
       --primary: #0b2340;
@@ -491,34 +491,208 @@
 <!-- Theme toggle logic lives in templates/layout.html to avoid duplication -->
 
   <main class="container">
-    <h1>Apprendre en s'amusant</h1>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython_stdlib.min.js"></script>
-<p><strong>Question :</strong> Quelle est la valeur de 3 * 7 ?</p>
-<div style="margin: 20px 0;">
-<input id="reponse_eleve" placeholder="Votre reponse ici" style="padding: 5px;">
-<button id="bouton_valider" style="padding: 5px; cursor: pointer;">Valider</button>
+    <h1>Page secrète</h1>
+<p>Si vous voyez ce texte, c'est que le mot de passe a fonctionné !</p>
+<h2>Robobrole</h2>
+<p>Le travail en équipe, autour d'un projet commun, favorise l'entraide.<br>
+Les élèves font appel à des connaissances travaillées plus tôt dans la progression.<br>
+Ils complètent également leurs connaissances grâce à l'approche projet.<br>
+Les enseignements sont articulés en réponse aux problématiques que le CDC soulève.</p>
+<h2>Cahier des charges</h2>
+<pre><code>* Comment structurer les informations pour cadrer un projet ?
+
+* **CO 2.1 :**  Identifier les éléments influents du développement d’un produit
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/CDC_2025.pdf" width="100%" height="400px"></iframe>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/robobrole/req_robobrole.png" alt="diagramme stem" style="width: 800px; height: 500px;"/>
 </div>
-<div id="resultat" style="font-weight:bold; min-height: 20px;"></div>
-<script type="text/python">
-from browser import document, alert
+<h2>Pilotage robot</h2>
+<pre><code>* Comment s'assurer de piloter notre robot à distance ?
 
-def verifier(ev):
-    reponse = document["reponse_eleve"].value
+* **CO3.2:** 'Identifier et caractériser l’agencement matériel et/ou logiciel d’un produit
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/robobrole/app_inv_1.png" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+</div>
+<pre><code>* Faire appel aux notions de programmation vues plus tôt dans l'année et s'appuyer sur les travaux pratiques proposés ici pour adapter une solution au robot.
+</code></pre>
+<h2>Gestion de projet</h2>
+<pre><code>* Le travail en projet doit-il être organisé ?
 
-    if reponse.strip() == "21":
-        document["resultat"].text = "✅ Bravo ! C'est la bonne reponse."
-        document["resultat"].style.color = "green"
-    else:
-        document["resultat"].text = "❌ Faux, c'est incorrect."
-        document["resultat"].style.color = "red"
+* **CO5.1 :** S’impliquer dans une démarche de projet menée en groupe
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/robobrole/gestion.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+</div>
+<pre><code>* Avant projet
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/1_avant_projet.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Chaîne fonctionnelle
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/12-c-chaines fonctionnelles.pdf" width="100%" height="400px"></iframe>
+<iframe src="/assets/imports/2025/fichiers/robobrole/fiche chaine fonctionnelle.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Conception préliminaire
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/2_conception_preliminaire.pdf" width="100%" height="400px"></iframe>
+<h2>Système de frappe</h2>
+<pre><code>* Comment réaliser un système pour frapper le palet ?
 
-# On attache le clic du bouton a la fonction
-document["bouton_valider"].bind("click", verifier)
-</script>
-<script>
-    brython();
-</script>
+* **CO3.4 :** Identifier et caractériser des solutions techniques.
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/fiche dessin technique.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Rationaliser des choix
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/fiche rationalisation des choix.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Modélisation du système de frappe
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/modélisation d'un Shoot.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exemple de systèmes de frappe
+
+* Il est important de faire preuve d'imagination pour adapter les propositions à vos besoins.
+
+    * **Bielle manivelle**
+
+        ![bielle manivelle](https://1.bp.blogspot.com/-wEKU14QB9BM/WVQl41WDlUI/AAAAAAAACP4/KvkeVsvQmec77JsKXsZAh18GmrAfNv-GgCKgBGAs/s1600/biela2.gif)
+
+    * **Lame élastique**
+
+
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; height: auto;&quot;&gt;
+        &lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+            &lt;source src=&quot;/assets/imports/2025/fichiers/robobrole/lame_elastique.mp4&quot; type=&quot;video/mp4&quot;&gt;
+            Votre navigateur ne supporte pas l'élément vidéo.
+        &lt;/video&gt;
+&lt;/div&gt;
+
+    * Modélisation lame élastique 
+
+&lt;iframe src=&quot;/assets/imports/2025/fichiers/robobrole/modélisation d'un système de frappe.pdf&quot; width=&quot;100%&quot; height=&quot;400px&quot;&gt;&lt;/iframe&gt;
+
+    * **Moteur à courant continu** 
+
+&lt;div style=&quot;display: flex; justify-content: center;&quot;&gt;
+&lt;img src=&quot;/assets/imports/2025/fichiers/robobrole/aube.png&quot; alt=&quot;diagramme stem&quot; style=&quot;width: 400px; height: 300px;&quot;/&gt;
+&lt;/div&gt;
+
+    * Enregistrer un DXF pour découpe laser
+
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; height: auto;&quot;&gt;
+        &lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+            &lt;source src=&quot;/assets/imports/2025/fichiers/robobrole/enregistrer_DXF/enregistrer_DXF.mp4&quot; type=&quot;video/mp4&quot;&gt;
+            Votre navigateur ne supporte pas l'élément vidéo.
+        &lt;/video&gt;
+&lt;/div&gt;
+</code></pre>
+<h2>Capteur ultrason</h2>
+<pre><code>* Comment permettre à notre robot de s'arrêter ?
+* **CO3.4 :** Identifier et caractériser des solutions techniques.
+* Découverte du capteur ultrason
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/TP_Ultrason.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exemple de lignes de code
+
+```cpp
+#include &quot;Ultrasonic.h&quot;
+
+Ultrasonic ultrasonic(7);
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+  long RangeInCentimeters;
+
+  Serial.println(&quot;La distance de l'obstacle est : &quot;);
+  RangeInCentimeters = ultrasonic.MeasureInCentimeters();
+  Serial.print(RangeInCentimeters); // 0~400cm
+  Serial.println(&quot; cm&quot;);
+  delay(250);
+}
+```
+</code></pre>
+<h2>Moteur à courant continu</h2>
+<pre><code>* Comment gérer la vitesse de notre robot ?
+* **CO3.4 :** Identifier et caractériser des solutions techniques.
+* Notion de PWM (Pulse Width Modulation) Modulation de largeur d'impulsion
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/moteurs à courant continu.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exemple de lignes de code
+
+```cpp
+void setup() {
+   pinMode(12, OUTPUT);
+}
+
+void loop() {
+   digitalWrite(12, HIGH); // allume le moteur
+   delay(1000);
+   digitalWrite(12, LOW); // désactiver le moteur
+   delay(1000);
+}
+```
+</code></pre>
+<h2>Servomoteur</h2>
+<pre><code>* Comment piloter un servomoteur ?
+* **CO3.4 :** Identifier et caractériser des solutions techniques.
+* Explications du servomoteur
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/servo-moteur.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exemple de lignes de code
+
+```cpp
+#include &lt;Servo.h&gt;  // on inclut la bibliothèque pour piloter un servomoteur
+
+Servo monServo;     // on crée l'objet monServo
+
+void setup() {
+    monServo.attach(9);   // on définit le Pin utilisé par le servomoteur
+    pinMode(13, OUTPUT);   // la Pin13 est mise en mode OUTPUT
+}
+
+void loop() {
+    monServo.write(0);      // on dit à l'objet de mettre le servo à 0°
+    monServo.write(180);    // on dit à l'objet de mettre le servo à 180°
+}
+```
+</code></pre>
+<h2>Cinématique</h2>
+<pre><code>* Introduction à la cinématique
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/Cours-cinematique_e.pdf" width="100%" height="400px"></iframe>
+<h2>Frottement</h2>
+<pre><code>Comment évaluer les efforts qui agissent sur notre palet ?
+
+* **CO 7.5** Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures et/ou d’observations sur le prototype ou la maquette, interpréter les résultats et qualifier le produit.
+
+* Situation déclenchante
+
+&lt;div style=&quot;display: flex; justify-content: center; align-items: center; height: auto;&quot;&gt;
+        &lt;video width=&quot;640&quot; height=&quot;360&quot; controls&gt;
+            &lt;source src=&quot;/assets/imports/2025/fichiers/robobrole/Tp première équilibre.mp4&quot; type=&quot;video/mp4&quot;&gt;
+            Votre navigateur ne supporte pas l'élément vidéo.
+        &lt;/video&gt;
+&lt;/div&gt;
+
+* Introduction au frottement (TP)
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/TP-frottement_e.pdf" width="100%" height="400px"></iframe>
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <video width="640" height="360" controls>
+            <source src="/assets/imports/2025/fichiers/robobrole/Tp_frottements_2025.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas l'élément vidéo.
+    </video>
+</div>
+<pre><code>* Synthèse tp
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/Synthèse tp frottement_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Notion de frottement
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/Cours-frottement_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exercices : frottement
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/robobrole/TD-frottement_e.pdf" width="100%" height="400px"></iframe>
 
   </main>
   <footer>

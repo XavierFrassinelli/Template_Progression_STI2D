@@ -11,8 +11,8 @@ source: "Progression-STI2D-2025/docs/apprendre.md"
 **Question :** Quelle est la valeur de 3 * 7 ?
 
 <div style="margin: 20px 0;">
-    <input id="reponse_eleve" placeholder="Votre reponse ici" style="padding: 5px;">
-    <button id="bouton_valider" style="padding: 5px; cursor: pointer;">Valider</button>
+<input id="reponse_eleve" placeholder="Votre reponse ici" style="padding: 5px;">
+<button id="bouton_valider" style="padding: 5px; cursor: pointer;">Valider</button>
 </div>
 
 <div id="resultat" style="font-weight:bold; min-height: 20px;"></div>

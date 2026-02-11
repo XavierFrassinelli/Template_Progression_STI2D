@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Apprendre en s'amusant</title>
+  <title>Page</title>
   <style>
     :root {
       --primary: #0b2340;
@@ -491,35 +491,177 @@
 <!-- Theme toggle logic lives in templates/layout.html to avoid duplication -->
 
   <main class="container">
-    <h1>Apprendre en s'amusant</h1>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/brython/3.11.0/brython_stdlib.min.js"></script>
-<p><strong>Question :</strong> Quelle est la valeur de 3 * 7 ?</p>
-<div style="margin: 20px 0;">
-<input id="reponse_eleve" placeholder="Votre reponse ici" style="padding: 5px;">
-<button id="bouton_valider" style="padding: 5px; cursor: pointer;">Valider</button>
+    <h1>Page secrète</h1>
+<p>Si vous voyez ce texte, c'est que le mot de passe a fonctionné !</p>
+<h2>Maison positive</h2>
+<h2>Unités et grandeurs</h2>
+<pre><code>* Situation déclenchante  
+Les unités et leur conversion peuvent-elles être sources d'erreurs ?
+
+*  **CO7.2 :** Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures et/ou d’observations sur le prototype ou la maquette, interpréter les résultats et qualifier le produit
+</code></pre>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/unite.png" alt="diagramme stem" style="width: 400px; height: 250px;"/>
 </div>
-<div id="resultat" style="font-weight:bold; min-height: 20px;"></div>
-<script type="text/python">
-from browser import document, alert
+<iframe src="/assets/imports/2025/fichiers/maison/unites/0_1 situation declenchante unites 1ere.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Cours unités et grandeurs
+* Td unités et grandeurs
+* QCM unités et grandeurs
+* Tp panneaux solaires
+</code></pre>
+<h2>Loi électricité</h2>
+<pre><code>* Loi des mailles
+* Loi des noeuds
+* Circuits série/parallèle
+* mesures : tensions/intensités
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/TP_panneau_solaire.pdf" width="100%" height="400px"></iframe>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/Synthèse_électrique.pdf" width="100%" height="400px"></iframe>
+<pre><code>* QCM lois électricité
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/QCM1_electrique.pdf" width="100%" height="400px"></iframe>
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
+    <video width="640" height="360" controls>
+            <source src="/assets/imports/2025/fichiers/maison/panneau/Vidéo_5 fonctionnement.mp4" type="video/mp4">
+            Votre navigateur ne supporte pas l'élément vidéo.
+    </video>
+</div>
+<h2>Habitat</h2>
+<pre><code>* Comment s'adapter aux exigences environnementales ?
 
-def verifier(ev):
-    reponse = document["reponse_eleve"].value
+* **CO1.3 :** Justifier les solutions constructives d’un produit au regard des performances environnementales et estimer leur impact sur l’efficacité globale
 
-    if reponse.strip() == "21":
-        document["resultat"].text = "✅ Bravo ! C'est la bonne reponse."
-        document["resultat"].style.color = "green"
-    else:
-        document["resultat"].text = "❌ Faux, c'est incorrect."
-        document["resultat"].style.color = "red"
+* Situation déclenchante
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/1.1 - Situation déclenchante 1.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Activité de découverte
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/1.2 - habitat_2020_decouverte_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Synthèse 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/1STI_0_fiche élève Synthese.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Sources d'énergie 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/NRJ_fiche1.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exercices 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/1.3 - TD2_sources_Energie_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Synthèse habitat 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/Synthese_habitat ecologie_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* L'habitat dans l'histoire
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/l-habitat-a-travers-l-histoire.pdf" width="100%" height="400px"></iframe>
+<pre><code>* RE 2020
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/Applications.pdf" width="100%" height="400px"></iframe>
+<h2>SysML</h2>
+<pre><code>* Comment décrire et étudier un système ?
 
-# On attache le clic du bouton a la fonction
-document["bouton_valider"].bind("click", verifier)
-</script>
+* **CO4.1 :** Décrire une idée, un principe, une solution, un projet en utilisant des outils de représentation adaptés
+
+* Introduction
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/diagramme_reveil_matin.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Créativité : décrire un système en SysML
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/TD_SYSML.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Synthèse SysML
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/panneau/SysML_synthèse_e.pdf" width="100%" height="400px"></iframe>
+<h2>Transfert thermique</h2>
+<pre><code>* Comment optimiser l'isolation d'une habitation ?
+
+* **CO6.5 :** Interpréter les résultats d’une simulation et conclure sur la performance de la solution
+
+* Flux thermiques
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/2_Ress.-Les transferts thermiques_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Bilan énergétique 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/habitat/e15_dpe_avancé.pdf" width="100%" height="400px"></iframe>
+<h2>Installation photovoltaïque</h2>
+<pre><code>* Comment améliorer une installation photovoltaïque  ?
+
+* **CO6.4 :** Choisir pour une fonction donnée, un modèle de comportement à partir d’observations ou de mesures faites sur le produit
+
+* Généralités photovoltaïque
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/photovol/C_photoV_généralités_p.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Maquette et simulation 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/photovol/TP1_photoV_e.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Diagramme exigences 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/photovol/PV_exigences.jpg" width="100%" height="400px"></iframe>
+<pre><code>* Diagramme cas d'utilisation
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/photovol/cas utilisation.jpg" width="100%" height="400px"></iframe>
+<pre><code>* Diagramme contexte
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/photovol/contexte_PV.jpg" width="100%" height="400px"></iframe>
+<h2>Analyse du réel</h2>
+<pre><code>* Quelle hypothèse faire pour analyser l'ensolieillement  ?
+
+* **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+
+* Protocole de mesure
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/reel/4_analyse_existant.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Plan de la maquette 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/reel/Plan maison.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Représentations 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/reel/representation - cours -eleve.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Exercice 1
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/reel/ex1 - vue.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Protocole avancé
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/reel/7.0_analyse_existant.pdf" width="100%" height="400px"></iframe>
+<h2>Traqueur solaire</h2>
+<pre><code>* Comment optimiser le rendement d'un panneau solaire  ?
+
+* **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+
+* Chaîne d'information
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/traqueur/Présentation.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Chaîne d'information vierge 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/traqueur/Chaine_info_à_compléter.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Arduino 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/traqueur/TP1_1_Traitement_Arduino.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Feu de circulation
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/traqueur/TP1_2_feu.pdf" width="100%" height="400px"></iframe>
+<h2>Analyse du cycle de vie</h2>
+<pre><code>* Comment réduire l'impact de la production de produits  ?
+
+* **CO7.2 :**  Mettre en œuvre un scénario de validation devant intégrer un protocole d’essais, de mesures.
+
+* Initiation par le jeu
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/acv/jeux carte impact _ substance de réference.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Résumé de cours 
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/acv/résumé cours ACV source BL.pdf" width="100%" height="400px"></iframe>
+<pre><code>* Cultiver son esprit critique 
+</code></pre>
+<div style="position: relative; width: 560px; height: 315px;">
+<img src="/assets/imports/2025/monaco.png" alt="Vignette personnalisée" style="width: 100%; height: 100%; cursor: pointer;" onclick="playVideo()">
+<iframe id="youtubePlayer" src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1" style="width: 100%; height: 100%; display: none;" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
 <script>
-    brython();
+        function playVideo() {
+        document.getElementById('youtubePlayer').style.display = 'block';
+        }
 </script>
-
+<pre><code>* ACV canette
+</code></pre>
+<iframe src="/assets/imports/2025/fichiers/maison/acv/conception canette ACV_e.pdf" width="100%" height="400px"></iframe>
   </main>
   <footer>
   <div class="container">
