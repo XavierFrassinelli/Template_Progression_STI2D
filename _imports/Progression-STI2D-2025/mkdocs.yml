@@ -1,0 +1,82 @@
+site_name: Progression STI2D
+site_url: https://lidlkidjoe.github.io/Progression-STI2D-2025/
+
+theme:
+  name: material
+  features:
+    - content.code.copy
+    - toc.integrate
+  language: fr
+  font:
+    text: Raleway
+    code: Roboto Mono
+  logo: assets/logosti2d.png
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+      primary: green
+      accent: deep purple
+    - scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+      primary: blue
+      accent: deep orange
+
+nav:
+  - STI2D: index.md
+  - Bienvenue:
+      - Accueil: accueil.md
+      - Idées et faits importants: faits.md
+      - Citations: citations.md
+      - Implications: implications.md
+  - Première:
+    - Introduction: premiere.md
+    - Maison positive: premiere_maison.md
+    - Bras manipulateur: premiere_bras.md
+    - Robobrole: premiere_robobrole.md
+    - Mobilité: premiere_mobilite.md
+    - Compétences: premiere_competence.md
+    - Carte mentale: premiere_mind_map.md
+    - Frottements:
+        - Introduction: chaine_info/frottement.md
+        - Palet de hockey: chaine_info/palet.md
+        - Freins: chaine_info/frein.md
+    - Chaîne de l'information:
+        - Introduction: chaine_info/index.md
+        - Quiz STI2D: chaine_info/quiz.md
+        - Simulation GeoGebra: chaine_info/geogebra.md
+        - Exercice Chaîne d'Information & d'Énergie: chaine_info/app.md
+        - PFS : chaine_info/Mechanics.md
+    - CO1 : premiere_statut_comp.md
+  - Terminale: Terminale.md
+  - Ressources:
+    - Ressources: Ressources.md
+    - Apprendre: apprendre.md
+
+markdown_extensions:
+  - markdown.extensions.abbr
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.details
+  - attr_list
+  - pymdownx.highlight:
+      linenums: true  # Active les numéros de ligne (facultatif)
+  - codehilite:
+      guess_lang: false  # Désactive la détection automatique du langage
+      linenums: true     # Active les numéros de ligne (facultatif)
+  - pymdownx.superfences
+  - pymdownx.highlight
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+
+plugins:
+  - search
+  - encryptcontent
+      

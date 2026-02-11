@@ -1,0 +1,33 @@
+---
+title: "TITRE (remplacer)"
+discipline: "2i2d"
+competence: "CO2.1"
+author: "Prof. Nom"
+format:
+  pdf:
+    include-in-header: latex-header.tex
+    latex-engine: xelatex
+    papersize: a4
+---
+
+```{=latex}
+% Définitions attendues par le header
+\\newcommand{\\DocTitle}{TITRE (remplacer)}
+\\newcommand{\\DocCompetence}{CO2.1}
+```
+
+# Objectif
+
+Remplace le titre et la compétence en haut du document.
+
+## Contenu
+
+Écris ton contenu ici. Les équations LaTeX sont supportées :
+
+$$\int_0^1 x^2 \, dx = \frac{1}{3}$$
+
+
+---
+
+_Fin du template 2i2d._
+
