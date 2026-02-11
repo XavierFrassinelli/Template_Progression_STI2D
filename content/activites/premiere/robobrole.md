@@ -93,31 +93,31 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
         * **Lame élastique**
 
 
-    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
             <video width="640" height="360" controls>
                 <source src="/assets/imports/2025/fichiers/robobrole/lame_elastique.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas l'élément vidéo.
             </video>
-    </div>
+</div>
 
         * Modélisation lame élastique 
 
-    <iframe src="/assets/imports/2025/fichiers/robobrole/modélisation d'un système de frappe.pdf" width="100%" height="400px"></iframe>
+<iframe src="/assets/imports/2025/fichiers/robobrole/modélisation d'un système de frappe.pdf" width="100%" height="400px"></iframe>
 
         * **Moteur à courant continu** 
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/fichiers/robobrole/aube.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/fichiers/robobrole/aube.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+</div>
 
         * Enregistrer un DXF pour découpe laser
 
-    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
             <video width="640" height="360" controls>
                 <source src="/assets/imports/2025/fichiers/robobrole/enregistrer_DXF/enregistrer_DXF.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas l'élément vidéo.
             </video>
-    </div>
+</div>
 
 
 ## Capteur ultrason
@@ -214,22 +214,22 @@ Les enseignements sont articulés en réponse aux problématiques que le CDC sou
 
     * Situation déclenchante
 
-    <div style="display: flex; justify-content: center; align-items: center; height: auto;">
+<div style="display: flex; justify-content: center; align-items: center; height: auto;">
             <video width="640" height="360" controls>
                 <source src="/assets/imports/2025/fichiers/robobrole/Tp première équilibre.mp4" type="video/mp4">
                 Votre navigateur ne supporte pas l'élément vidéo.
             </video>
-    </div>
+</div>
 
     * Introduction au frottement (TP)
 
 <iframe src="/assets/imports/2025/fichiers/robobrole/TP-frottement_e.pdf" width="100%" height="400px"></iframe>
 
 <div style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <video width="640" height="360" controls>
+<video width="640" height="360" controls>
             <source src="/assets/imports/2025/fichiers/robobrole/Tp_frottements_2025.mp4" type="video/mp4">
             Votre navigateur ne supporte pas l'élément vidéo.
-    </video>
+</video>
 </div>
 
     * Synthèse tp

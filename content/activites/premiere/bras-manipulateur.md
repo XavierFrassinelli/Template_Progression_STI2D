@@ -98,10 +98,10 @@ Si vous voyez ce texte, c'est que le mot de passe a fonctionné !
     * Situation déclenchante
 
 <div style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <video width="640" height="360" controls>
+<video width="640" height="360" controls>
             <source src="/assets/imports/2025/fichiers/bras/Crash_concord.mp4" type="video/mp4">
             Votre navigateur ne supporte pas l'élément vidéo.
-    </video>
+</video>
 </div>
 
     * Introduction liaisons mécaniques

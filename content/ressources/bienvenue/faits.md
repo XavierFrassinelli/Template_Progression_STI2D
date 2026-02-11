@@ -17,36 +17,36 @@ source: "Progression-STI2D-2025/docs/faits.md"
 
         * Architecture et construction
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/ac.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/ac.jpg" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+</div>
 
         * Energies et environnement
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/ee.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/ee.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+</div>
 
         * Systemes d'information et numerique
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/numerique.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/numerique.jpg" alt="diagramme stem" style="width: 400px; height: 250px;"/>
+</div>
 
         * Innovation technologique et eco-conception
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/itec.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/itec.png" alt="diagramme stem" style="width: 400px; height: 300px;"/>
+</div>
 
 
 ## Jumeaux numeriques
 
     * Representation virtuelle, dynamique, d'un produit physique dont il reproduit les caracteristiques essentielles
 
-    <div style="display: flex; justify-content: center;">
-    <img src="/assets/imports/2025/jumeau.png" alt="diagramme stem" style="width: 800px; height: 500px;"/>
-    </div>
+<div style="display: flex; justify-content: center;">
+<img src="/assets/imports/2025/jumeau.png" alt="diagramme stem" style="width: 800px; height: 500px;"/>
+</div>
 
         * **Caracterisation des Produits sous l'Angle du Developpement Durable**
 

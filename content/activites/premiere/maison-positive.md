@@ -48,10 +48,10 @@ Si vous voyez ce texte, c'est que le mot de passe a fonctionné !
 <iframe src="/assets/imports/2025/fichiers/maison/panneau/QCM1_electrique.pdf" width="100%" height="400px"></iframe>
 
 <div style="display: flex; justify-content: center; align-items: center; height: auto;">
-    <video width="640" height="360" controls>
+<video width="640" height="360" controls>
             <source src="/assets/imports/2025/fichiers/maison/panneau/Vidéo_5 fonctionnement.mp4" type="video/mp4">
             Votre navigateur ne supporte pas l'élément vidéo.
-    </video>
+</video>
 </div>
 
 
