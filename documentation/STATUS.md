@@ -68,9 +68,16 @@
 ## Ce qui reste a faire (prochaines etapes)
 
 ### Verification immediates (Phase B.2)
-1. ⏳ Verifier tous assets references dans `assets/imports/2025/` — A FAIRE
+1. ✅ Verifier tous assets references dans `assets/imports/2025/` — COMPLETÉ
+   - 17 références d'images trouvées et vérifiées
+   - 5 fichiers HTML (convoyeur, frein, quiz, energychain, mechanics) présents
+   - Tous les files/ et img/ subdirectories présents
 2. ✅ Navigation mise a jour dans `content/index.md` et `templates/header.html` — FAIT
-3. ⏳ Rebuild final et test en local — A FAIRE
+3. ✅ Rebuild final et test en local — COMPLETÉ
+   - npm run build : 38 pages HTML générées
+   - Corrected asset paths from relative to absolute (/assets/...)
+   - Server test : http://localhost:8080 ✓
+   - All critical pages tested and loading correctly
 
 ### Phase C (apps interactives)
 4. Decider integration des apps JS (quiz, energychain, mechanics)
