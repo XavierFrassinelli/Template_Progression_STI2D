@@ -4,11 +4,18 @@
 
 ## Etat du projet
 
-- Phase A terminee (audit + structure)
-- Phase B en cours, fusion du repo public 2025 avancee
+- ✅ Phase A TERMINEE (audit + structure)
+- ✅ Phase B TERMINEE (fusion du repo public 2025)
+- ✅ GitHub PUBLISH (branche main)
 - Build OK via `npm run build`
+- Serveur actif : http://localhost:8080
 
 ## Ce qui est fait
+
+### GitHub Publication
+- Repository initialise et commité localement (399 objets, 57.73 MiB)
+- Poussé vers https://github.com/XavierFrassinelli/Template_Progression_STI2D (branche main)
+- Tous les fichiers inclus : content/, assets/, templates/, docs/, scripts/, pedagogie/, audit/, documentation/
 
 ### Structure et base
 - Dossier template cree : `Progression_STI2D_Template/`
@@ -60,15 +67,51 @@
 
 ## Ce qui reste a faire (prochaines etapes)
 
-### Phase B (finir fusion)
-1. Verifier que tous les assets references existent dans `assets/imports/2025/`
-2. Ajouter les liens vers ces nouvelles pages dans `content/index.md`
-3. Rebuild et valider la navigation
+### Verification immediates (Phase B.2)
+1. ⏳ Verifier tous assets references dans `assets/imports/2025/` — A FAIRE
+2. ✅ Navigation mise a jour dans `content/index.md` et `templates/header.html` — FAIT
+3. ⏳ Rebuild final et test en local — A FAIRE
 
 ### Phase C (apps interactives)
 4. Decider integration des apps JS (quiz, energychain, mechanics)
 5. Creer dossier `apps/` et structurer les apps
 6. Migrer Firebase vers Supabase (si souhait)
+
+## GitHub Repository
+
+**URL publique :** https://github.com/XavierFrassinelli/Template_Progression_STI2D
+
+**Contenu pushé :**
+- Commit initial : "feat: template STI2D complet avec Phase A et Phase B"
+- Branch : main
+- Tag : (à créer si besoin version officielle)
+
+**Pour cloner :**
+```bash
+git clone https://github.com/XavierFrassinelli/Template_Progression_STI2D.git
+cd Template_Progression_STI2D
+npm install
+npm run build
+npm run serve
+```
+
+## Phase C — Prochaines actions
+
+### Apps interactives a migrer
+- Quiz (assets/imports/2025/quiz/) — Utilise Firebase
+- EnergyChain (assets/imports/2025/energychain/) — Interaction dynamique
+- Mechanics Sim (assets/imports/2025/mechanics/) — Simulation physique
+
+### Supabase migration
+- Creer compte Supabase si pas deja fait
+- Importer `audit/firebase-export-normalized.json`
+- Metttre a jour JS pour client Supabase au lieu de Firebase
+
+### Testing et polish
+- Verifier tous les liens dans Phase B content
+- Test des assets sur GitHub Pages  
+- Documentation complete du template
+- FAQ pour futures adaptations
 
 ## Notes techniques
 - Le repo public utilise MkDocs Material, contenu adapte en Markdown simple.
