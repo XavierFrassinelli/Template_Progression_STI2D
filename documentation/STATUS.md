@@ -6,9 +6,10 @@
 
 - ✅ Phase A TERMINEE (audit + structure)
 - ✅ Phase B TERMINEE (fusion du repo public 2025)
-- ✅ GitHub PUBLISH (branche main)
-- Build OK via `npm run build`
-- Serveur actif : http://localhost:8080
+- ✅ Phase B.2 TERMINEE (assets vérifiés, HTML fixes, 44 pages générées)
+- ✅ GitHub Pages LIVE (https://xaviersfelli.github.io/Template_Progression_STI2D/)
+- Build OK via `npm run build` (44 pages HTML)
+- Serveur local actif : http://localhost:8080
 
 ## Ce qui est fait
 
@@ -16,6 +17,15 @@
 - Repository initialise et commité localement (399 objets, 57.73 MiB)
 - Poussé vers https://github.com/XavierFrassinelli/Template_Progression_STI2D (branche main)
 - Tous les fichiers inclus : content/, assets/, templates/, docs/, scripts/, pedagogie/, audit/, documentation/
+- GitHub Pages configuré sur branche `gh-pages` ✅
+
+### Migration contenu complet (11 fév 2026)
+- ✅ 6 fichiers Première migré : bras, maison, robobrole, competences-projet, mind-map, comp-statut.html
+- ✅ Script `migrate-missing-content.js` créé pour automatiser
+- ✅ Script `fix-html-rendering.js` créé pour corriger indentation HTML
+- ✅ Conversion Material Tabs (===) → Headers (##)
+- ✅ Correction chemins assets `/Progression-STI2D-2025/` → `/assets/imports/2025/`
+- ✅ 44 pages HTML générées (38 → 44 pages)
 
 ### Structure et base
 - Dossier template cree : `Progression_STI2D_Template/`
