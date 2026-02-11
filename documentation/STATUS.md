@@ -1,15 +1,15 @@
 # Status — Progression STI2D Template
 
-**Derniere mise a jour :** 11 fevrier 2026
+**Derniere mise a jour :** 11 fevrier 2026 13:15 UTC
 
 ## Etat du projet
 
 - ✅ Phase A TERMINEE (audit + structure)
 - ✅ Phase B TERMINEE (fusion du repo public 2025)
 - ✅ Phase B.2 TERMINEE (assets vérifiés, HTML fixes, 44 pages générées)
-- ✅ GitHub Pages LIVE (https://xaviersfelli.github.io/Template_Progression_STI2D/)
-- Build OK via `npm run build` (44 pages HTML)
-- Serveur local actif : http://localhost:8080
+- ✅ GitHub Pages LIVE et SYNCHRONISÉE (https://xaviersfelli.github.io/Template_Progression_STI2D/)
+- ✅ Build OK via `npm run build` (44 pages HTML)
+- ✅ gh-pages rebuild complet (commit 957c54f — 11 fév 13:15)
 
 ## Ce qui est fait
 
@@ -18,6 +18,9 @@
 - Poussé vers https://github.com/XavierFrassinelli/Template_Progression_STI2D (branche main)
 - Tous les fichiers inclus : content/, assets/, templates/, docs/, scripts/, pedagogie/, audit/, documentation/
 - GitHub Pages configuré sur branche `gh-pages` ✅
+- gh-pages rebuild complet (11 fév 13:15) — commit 957c54f
+  - Contient la dernière version de /docs avec 44 pages HTML
+  - Incluant 6 fichiers Première nouvellement migrés
 
 ### Migration contenu complet (11 fév 2026)
 - ✅ 6 fichiers Première migré : bras, maison, robobrole, competences-projet, mind-map, comp-statut.html
@@ -52,13 +55,13 @@
 
 - Premiere :
   - `content/activites/premiere/programme-premiere.md`
-  - `content/activites/premiere/maison-positive.md`
-  - `content/activites/premiere/bras-manipulateur.md`
-  - `content/activites/premiere/robobrole.md`
-  - `content/activites/premiere/mobilite.md` (stub, a completer)
-  - `content/ressources/premiere/carte-mentale.md`
-  - `content/ressources/premiere/competences.md`
-  - `content/ressources/premiere/statut-competences.md`
+  - `content/activites/premiere/maison-positive.md` ✨ (migré 11 fév)
+  - `content/activites/premiere/bras-manipulateur.md` ✨ (migré 11 fév)
+  - `content/activites/premiere/robobrole.md` ✨ (migré 11 fév)
+  - `content/activites/premiere/mobilite.md`
+  - `content/ressources/premiere/competences-projet.md` ✨ (migré 11 fév)
+  - `content/ressources/premiere/mind-map.md` ✨ (migré 11 fév)
+  - `content/ressources/premiere/comp-statut.html` ✨ (copié 11 fév)
 
 - Chaine info :
   - `content/ressources/chaine_info/index.md`
